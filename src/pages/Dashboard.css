@@ -1,0 +1,135 @@
+/* ====== GLOBAL ====== */
+body {
+  background-color: #f4f6f9;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* ====== LAYOUT (FIXED) ====== */
+/* ❌ REMOVED max-width & auto margin */
+.dashboard {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* ====== HEADER ====== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 28px;
+}
+
+/* ====== CARDS ====== */
+.card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  margin-bottom: 25px;
+}
+
+/* ====== FORM ====== */
+.card form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.card form input,
+.card form select {
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.card form input:focus,
+.card form select:focus {
+  outline: none;
+  border-color: #4f46e5;
+}
+
+/* ====== BUTTONS ====== */
+button {
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-primary {
+  background: #4f46e5;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #4338ca;
+}
+
+.btn-secondary {
+  background: #e5e7eb;
+}
+
+.btn-danger {
+  background: #dc2626;
+  color: white;
+}
+
+.btn-danger:hover {
+  background: #b91c1c;
+}
+
+/* ====== TABLE ====== */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table thead {
+  background: #f9fafb;
+}
+
+.table th,
+.table td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.table tr:hover {
+  background: #f3f4f6;
+}
+
+/* ====== STATUS COLORS ====== */
+.status-new {
+  color: #2563eb;
+}
+
+.status-contacted {
+  color: #ca8a04;
+}
+
+.status-converted {
+  color: #16a34a;
+}
+
+/* ====== NOTES ====== */
+.notes input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+}
+
+/* ====== ERROR ====== */
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
